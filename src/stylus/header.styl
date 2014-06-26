@@ -1,0 +1,54 @@
+/**
+ * Header block
+ */
+
+.header
+  background #000
+  box-shadow 0 2px 9px rgba(0, 0, 0, 0.28)
+
+  &__wrapper
+    width $pageWidth
+    margin 0 auto
+    white-space nowrap
+    font-size 0
+
+  &__logo
+  &__nav
+  &__login
+  &__menu-item
+    display inline-block
+    height $headerHeight
+    line-height $headerHeight
+    vertical-align middle
+
+  &__logo
+    margin 0 25px 0 0
+    color #fff
+    font-size 18px
+    font-weight 700
+    text-transform uppercase
+    text-decoration none
+
+  &__menu
+    margin 0
+    padding 0
+    list-style none outside none
+    font-size 0
+
+    &-item
+      margin 0 25px 0 0
+      padding 0
+
+      &:last-child
+        margin-right 0
+
+    &-link
+      font-size 14px
+      color #fff
+
+  &__login
+    color #fff
+    font-size 14px
+    font-weight 700
+    text-transform uppercase
+    text-decoration none
