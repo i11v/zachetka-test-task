@@ -3,6 +3,27 @@
  */
 
 .content
-  padding $pagePadding
-  background #fff
-  height 500px
+  padding: $pagePadding
+  background: #fff
+
+.wizard
+  position: relative
+  overflow: hidden
+  transition: height 0.3s ease-out
+
+  &_step_1
+    height: 493px
+
+  &_step_2
+    height: 281px
+
+  &__form
+    width: 100%
+    position: absolute
+    transition: left 0.3s ease-out
+
+    &_step_1
+      left: 0
+
+    &_step_2
+      left: 100%
